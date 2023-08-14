@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body {
-    
-}
 
 #header {
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(https://source.unsplash.com/1440x667?food);
@@ -17,4 +14,93 @@ body {
     color: black;
     background-color: white;
     border-color: white;
+}
+
+#recipeSection {
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 50px; 
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    min-width: 380px;
+    min-height: 730px;
+}
+
+.card img {
+    min-width: 380px;
+    max-height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.recipe-time {
+    display: inline;
+    background-color: #FFD15B;
+    /* padding: 5px 5px; */
+    border-radius: 15px;
+    width: 65px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.card-body {
+    padding: 7%;
+}
+
+.recipe-name {
+    font-family: 'Anton', 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.card-body h4 {
+    font-family: 'Anton', 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #787878;
+    padding-bottom: 15px;
+}
+
+.card button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    float: right;
+}
+
+.ingredients-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.ingredients-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ingredients-list p {
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients-container {
+    margin-bottom: 15px;
+}
+
+.ingredients-quantity {
+    color: #787878;
 }
